@@ -16,11 +16,57 @@ Alternatively, the image can be built locally from the provided Dockerfile by ex
 After the image has been downloaded or built, enter the container and run the following command:
 ```python /home/main.py```
 
-Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default parameters.
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
 
 **TransCDR** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:TransCDR```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t TransCDR:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
 
 **RedCDR** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:RedCDR```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t RedCDR:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
+
+**MSDRP** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:MSDRP```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t MSDRP:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
+
+**MOMLIN** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:MOMLIN```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t MOMLIN:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+
+Modify the parameter value from 'start_momlin.m' to 'MOMLIN_example.m' in the main.py configuration.
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
 
 ### 3. Data
 
