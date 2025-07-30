@@ -1,4 +1,4 @@
-# Use full Python base image (not slim)
+# Use full Python base image
 FROM python:3.6-bullseye
 
 WORKDIR /app

@@ -68,6 +68,50 @@ Modify the parameter value from 'start_momlin.m' to 'MOMLIN_example.m' in the ma
 
 Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
 
+**MMPROLN** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:MMPROLN```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t MMPROLN:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+
+Modify the parameter value from 'start_momlin.m' to 'MOMLIN_example.m' in the main.py configuration.
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
+
+**MetaCancer** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:MetaCancer```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t MetaCancer:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+
+Modify the parameter value from 'start_momlin.m' to 'MOMLIN_example.m' in the main.py configuration.
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
+
+**MMPROLN** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:MMproln```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t MMproln:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+
+Modify the parameter value from 'start_momlin.m' to 'MOMLIN_example.m' in the main.py configuration.
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
+
+Warning:
+    You have to delete certain code block in the utils.py when you are using real world data. The images in the Data folder are only for testing purposes.
 ### 3. Data
 
 
