@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install -r require.txt
+RUN pip install sklearn
 
 CMD ["matlab", "-batch", "momlin_docker_entry"]

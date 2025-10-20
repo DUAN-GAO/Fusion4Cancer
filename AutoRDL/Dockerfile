@@ -1,9 +1,9 @@
-FROM python:3.8-bullseye
+FROM python:3.9-bullseye
 
 WORKDIR /app
 
 COPY . /app
 
-RUN pip install -r require.txt
+RUN pip install torch torchvision timm ultralytics
 
 CMD ["matlab", "-batch", "momlin_docker_entry"]
