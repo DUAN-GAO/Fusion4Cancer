@@ -2,7 +2,7 @@
 -----------------------------------------------------------------
 
 ## 1. Introduction
-**Fusion4Cancer** is a tool that integrates algorithms from 15 academic papers referenced in review articles. It provides 18 corresponding Docker images and Dockerfiles, eliminating the need for users to manually install complex dependencies in Python, R, or other programming languages. Users can simply pull the pre-built images from Docker Hub or build them locally from the provided Dockerfiles. All original project bugs have been fixed, and the APIs of all 18 algorithms have been fully rewritten, enabling researchers to easily and efficiently reproduce and apply the methods described in the literature.
+**Fusion4Cancer** is a tool that integrates algorithms from 18 academic papers referenced in review articles. It provides 18 corresponding Docker images and Dockerfiles, eliminating the need for users to manually install complex dependencies in Python, R, or other programming languages. Users can simply pull the pre-built images from Docker Hub or build them locally from the provided Dockerfiles. All original project bugs have been fixed, and the APIs of all 18 algorithms have been fully rewritten, enabling researchers to easily and efficiently reproduce and apply the methods described in the literature.
 
 
 ## 2. Usage
@@ -220,6 +220,19 @@ Alternatively, the image can be built locally from the provided Dockerfile by ex
 After the image has been downloaded or built, enter the container and run the following command:
 
 ```cd  /home/src/```
+```python /home/main.py```
+
+Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
+
+**logcoshvae** 
+The Docker image can be directly pulled from Docker Hub using the following command:
+```docker pull duangao/fusion4cancer:logcoshvae```
+
+Alternatively, the image can be built locally from the provided Dockerfile by executing:
+```sudo docker build -t logcoshvae:v1 .```
+
+After the image has been downloaded or built, enter the container and run the following command:
+
 ```python /home/main.py```
 
 Please modify the command-line arguments in main.py as needed. If no modifications are made, the program will run with the default hyperparameters.
